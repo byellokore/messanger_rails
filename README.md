@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails projects simulating messanger app
 
-Things you may want to cover:
+* User profile with photo
 
-* Ruby version
+* User has contacts
 
-* System dependencies
+* User can chat with contacts
 
-* Configuration
+* Test to be updated
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
