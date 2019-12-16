@@ -23,5 +23,7 @@ test:
   database: messenger_rails_test
 
 production:
-  <<: *default
-  database: production
+  adapter: postgresql
+  database: d7v0e6f0n95t1i
+  pool: 5
+  timeout: 5000
