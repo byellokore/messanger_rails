@@ -6,14 +6,14 @@
 #
 default: &default
   adapter: postgresql
-  encoding: unicode
-  username: <%= Rails.application.credentials.postgresql[:postgre_dev_user] %>
-  password: <%= Rails.application.credentials.postgresql[:postgre_dev_password] %>
+  encoding: unicode 
   pool: 5
   timeout: 5000
 development:
   <<: *default
   database: messenger_rails
+  username: <%= Rails.application.credentials.postgresql[:postgre_dev_user] %>
+  password: <%= Rails.application.credentials.postgresql[:postgre_dev_password] %>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -21,6 +21,8 @@ development:
 test:
   <<: *default
   database: messenger_rails_test
+  username: <%= Rails.application.credentials.postgresql[:postgre_dev_user] %>
+  password: <%= Rails.application.credentials.postgresql[:postgre_dev_password] %>
 
 production:
   adapter: postgresql
