@@ -13,6 +13,7 @@ import bulmaQuickview from "bulma-quickview/src/js"
 
 
 document.addEventListener("turbolinks:load", function(){
+    FontAwesome.dom.i2svg();
     let quickviews = bulmaQuickview.attach()
 
     const fileInput = document.querySelectorAll('input[type="file"].file-input')
